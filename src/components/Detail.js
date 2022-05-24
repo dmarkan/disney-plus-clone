@@ -26,6 +26,12 @@ function Detail() {
         <img src="/images/group-icon.png" />
         </GroupWatchButton>
       </Controls>
+      <Subtitle>
+
+      </Subtitle>
+      <Description>
+        Descripton about the movie.
+      </Description>
     </Container>
   )
 }
@@ -117,4 +123,18 @@ const AddButton = styledComponents.button`
 
 const GroupWatchButton = styledComponents(AddButton)`
     background: rgb(0, 0, 0);
+`
+
+const Subtitle = styledComponents.div`
+    color: rgb(249, 249, 249);
+    font-size: 15px;
+    min-height: 20px;
+    margin-top: 26px;
+`
+
+const Description = styledComponents.div`
+    line-height: 1.4;
+    font-size: 20px;
+    margin-top: 16px;
+    color: rgb(249, 249, 249);
 `
